@@ -1,77 +1,178 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Generador de Notificaciones</title>
 
 <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
+
 <div class="container">
 
-<h1>Generador de Notificaciones</h1>
+
+<h1>
+Generador de Notificaciones
+</h1>
+
 
 
 <div class="input-box">
 
+
 <input id="title" placeholder="Título de la notificación">
+
 
 <textarea id="message" placeholder="Escriba el mensaje"></textarea>
 
+
 <input id="amount" placeholder="Monto">
+
 
 <input id="status" placeholder="Estado">
 
+
+
 <button onclick="generate()">
+
 Generar Notificación
+
 </button>
 
+
 </div>
+
+
 
 
 
 <div id="card" class="notification">
 
-<h2 id="showTitle">
+
+
+<div class="notification-section">
+
+<div class="section-title">
+🔔 Notificación
+</div>
+
+<div class="section-value" id="showTitle">
+
 Notificación del Sistema
-</h2>
+
+</div>
+
+</div>
 
 
-<p id="showMessage">
+
+
+
+<div class="notification-section">
+
+
+<div class="section-title">
+
+Mensaje
+
+</div>
+
+
+<div class="section-value" id="showMessage">
+
 Mensaje de ejemplo...
-</p>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="notification-section">
+
+
+<div class="section-title">
+
+Monto
+
+</div>
 
 
 <div class="amount" id="showAmount">
+
 $0
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="notification-section">
+
+
+<div class="section-title">
+
+Estado
+
 </div>
 
 
 <div class="status" id="showStatus">
+
 Pendiente
+
 </div>
 
 
 </div>
+
+
+
+</div>
+
+
 
 
 
 <button class="download" onclick="downloadImage()">
+
 Descargar Imagen PNG
+
 </button>
+
 
 
 </div>
 
 
+
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
 
 <script src="script.js"></script>
 
 
 </body>
+
 </html>
