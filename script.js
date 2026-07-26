@@ -3,30 +3,26 @@ function generate(){
 let title =
 document.getElementById("title").value;
 
+
 let message =
 document.getElementById("message").value;
 
-let amount =
-document.getElementById("amount").value;
 
 let status =
 document.getElementById("status").value;
 
 
+
 document.getElementById("showTitle").innerHTML =
-title || "System Notification";
+title || "Notificación del Sistema";
 
 
 document.getElementById("showMessage").innerHTML =
-message || "Your message here...";
-
-
-document.getElementById("showAmount").innerHTML =
-amount || "$0";
+message || "Mensaje de ejemplo...";
 
 
 document.getElementById("showStatus").innerHTML =
-status || "Pending";
+status || "Pendiente";
 
 }
 
@@ -40,14 +36,18 @@ document.getElementById("card");
 
 html2canvas(card).then(canvas=>{
 
+
 let link =
 document.createElement("a");
 
+
 link.download =
-"notification.png";
+"notificacion.png";
+
 
 link.href =
 canvas.toDataURL();
+
 
 link.click();
 
